@@ -1,10 +1,10 @@
-// FullSales Flix — interações da página
+// FullSales — Aula Gratuita: interações da página
 
 // Ano dinâmico no rodapé
 const yearEl = document.getElementById("year");
 if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-// Formulário de captura (gratuito) — validação simples no cliente
+// Formulário de captura (aula gratuita) — validação simples no cliente
 const form = document.getElementById("signup-form");
 const note = document.getElementById("form-note");
 
@@ -24,22 +24,8 @@ if (form && note) {
     }
 
     // Aqui entraria a integração real (API/CRM). Por enquanto, confirmação local.
-    note.textContent = "✅ Tudo certo! Enviamos o acesso gratuito para " + email + ".";
+    note.textContent = "✅ Tudo certo! Avisaremos em " + email + " assim que a aula for liberada.";
     note.classList.add("ok");
     form.reset();
   });
 }
-
-// Cards do catálogo levam para o CTA (estilo "dar play")
-document.querySelectorAll(".card").forEach((card) => {
-  const goToCta = () => {
-    document.getElementById("cta").scrollIntoView({ behavior: "smooth" });
-  };
-  card.addEventListener("click", goToCta);
-  card.addEventListener("keydown", (e) => {
-    if (e.key === "Enter" || e.key === " ") {
-      e.preventDefault();
-      goToCta();
-    }
-  });
-});

@@ -1,32 +1,33 @@
-# FullSales Flix 🎬
+# FullSales — Aula Gratuita 🎓
 
-Landing page do **produto gratuito** da FullSales Academy, no estilo streaming
-(catálogo de treinamentos de vendas). Inspirada na
-[FullSales Academy](https://fullsalessystem.com/fullsalesacademy/), focada
-exclusivamente no conteúdo **100% gratuito**.
+Landing page da **aula gratuita** da Full Sales System, inspirada em
+[aulagratuita.fullsalessystem.com](https://aulagratuita.fullsalessystem.com/).
+Formato de página de captura (VSL-style), focada exclusivamente no conteúdo
+**100% gratuito**. _Sem vídeo (VSL) por enquanto_ — o hero leva direto à
+captura de e-mail.
 
 ## Conteúdo
 
-- `index.html` — estrutura da página (hero, catálogo, benefícios, CTA, FAQ)
-- `styles.css` — tema escuro "flix", responsivo, sem dependências
-- `script.js` — ano dinâmico, validação do formulário gratuito e interação dos cards
+- `index.html` — hero, "o que você vai aprender", provas/números, autoridade
+  (Vinícius de Sá), "para quem é", CTA de captura e FAQ
+- `styles.css` — tema escuro, responsivo, sem dependências
+- `script.js` — ano dinâmico e validação do formulário gratuito
 
 ## Como rodar
 
-É um site estático, sem build. Basta abrir o `index.html` no navegador:
+Site estático, sem build. Abra o `index.html` no navegador:
 
 ```bash
-# opção simples
 open index.html        # macOS
 xdg-open index.html    # Linux
 
-# ou servir localmente
-python3 -m http.server 8000
-# depois acesse http://localhost:8000
+# ou sirva localmente
+python3 -m http.server 8000   # http://localhost:8000
 ```
 
 ## Próximos passos sugeridos
 
-- Conectar o formulário de captura a um CRM/API real (hoje é só validação no cliente)
-- Trocar os placeholders das aulas por thumbnails/links reais
-- Adicionar player de vídeo e área logada
+- Adicionar o player da VSL no hero quando o vídeo estiver pronto
+- Conectar o formulário a um CRM/API real (hoje é só validação no cliente)
+- Substituir foto/bio placeholder do Vinícius por conteúdo oficial
+- Validar números e copy com a paleta/identidade oficial da marca
