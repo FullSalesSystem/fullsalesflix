@@ -94,7 +94,7 @@ a { color: inherit; text-decoration: none; }
 .hero {
   position: relative;
   overflow: hidden;
-  padding: 64px 0 72px;
+  padding: 28px 0 72px;
   text-align: center;
 }
 .hero-bg {
@@ -439,7 +439,7 @@ a { color: inherit; text-decoration: none; }
   .authority-text p { margin-left: auto; margin-right: auto; }
 }
 @media (max-width: 640px) {
-  .hero { padding: 48px 0 56px; }
+  .hero { padding: 20px 0 56px; }
   .section { padding: 56px 0; }
   .marquee { margin-top: 34px; }
   .poster { width: 150px; }
